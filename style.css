@@ -3,6 +3,10 @@ body {
      font-family: 'Patua One', cursive;
 }
 
+.btn {
+     font-family:Arial, Helvetica, sans-serif;
+}
+
 .jumbotron {
      background-color: #3d405b;
      color: white;
