@@ -9,10 +9,14 @@ body {
 
 .jumbotron {
      background-color: #3d405b;
-     background-image: url("assets/gallery/white-subway-tile-kitchen-backsplash.png");
+     background-image: url("../assets/gallery/white-subway-tile-kitchen-backsplash.png");
      text-align: right;
      color: black;
      margin-top: 25px;
+}
+
+.hidden {
+    display: none;
 }
 
 .card {

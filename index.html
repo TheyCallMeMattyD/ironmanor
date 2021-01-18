@@ -6,19 +6,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Google Font Family -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
   <!-- LightBox -->
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+
+
   <title>Iron Manor</title>
 </head>
 
@@ -38,7 +40,7 @@
     <hr class="mt-2 mb-5">
   </div>
 
-  <div class="row">
+  <div class="row" id="description">
     <div class="col-lg-8 card" style="width: 18rem;">
       <div class="card-body">
         <h2 class="card-title">SummerWalk West</h2>
@@ -50,7 +52,7 @@
   </div>
 
   <!-- Gallery Content -->
-  <div class="container gallery">
+  <div class="container hidden" id="gallery">
 
     <!-- Row One -->
     <!-- Image One -->
@@ -69,8 +71,8 @@
         <!-- Image Two -->
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
           <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
-            data-title="BEFORE shot of the main living area looking towards fireplace" data-image="./assets/gallery/before.jpg"
-            data-target="#image-gallery">
+            data-title="BEFORE shot of the main living area looking towards fireplace"
+            data-image="./assets/gallery/before.jpg" data-target="#image-gallery">
             <img class="img-thumbnail" src="assets/gallery/beforeThumb1000x750.jpg" alt="before image">
             <div class="caption">
               <p>'Before' shot</p>
@@ -79,12 +81,10 @@
         </div>
         <!-- Image Three -->
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="BEFORE First Floor main living area"
-            data-image="assets/gallery/before1.jpg"
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+            data-title="BEFORE First Floor main living area" data-image="assets/gallery/before1.jpg"
             data-target="#image-gallery">
-            <img class="img-thumbnail"
-              src="assets/gallery/before1Thumb.jpg"
-              alt="Before picture">
+            <img class="img-thumbnail" src="assets/gallery/before1Thumb.jpg" alt="Before picture">
             <div class="caption">
               <p>'Before' First Floor</p>
             </div>
@@ -92,12 +92,10 @@
         </div>
         <!-- Image Four -->
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="BEFORE looking from living room towards kitchen"
-            data-image="assets/gallery/before2.jpg"
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+            data-title="BEFORE looking from living room towards kitchen" data-image="assets/gallery/before2.jpg"
             data-target="#image-gallery">
-            <img class="img-thumbnail"
-              src="assets/gallery/before2thumb.jpg"
-              alt="Before image">
+            <img class="img-thumbnail" src="assets/gallery/before2thumb.jpg" alt="Before image">
             <div class="caption">
               <p>'Before' Dining Room</p>
             </div>
@@ -248,7 +246,7 @@
     crossorigin="anonymous"></script>
 
   <!-- Javascript Source Link -->
-  <script src="index.js"></script>
+  <script src="assets/index.js"></script>
 
 </body>
 
