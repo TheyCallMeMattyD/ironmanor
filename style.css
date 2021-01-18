@@ -1,5 +1,5 @@
 body {
-     background-color: #f4f1de;
+     background-color: #3d5a80;
      font-family: 'Patua One', cursive;
 }
 
@@ -9,8 +9,10 @@ body {
 
 .jumbotron {
      background-color: #3d405b;
-     color: white;
-     margin-top: 10px;
+     background-image: url("assets/gallery/white-subway-tile-kitchen-backsplash.png");
+     text-align: right;
+     color: black;
+     margin-top: 25px;
 }
 
 .card {
