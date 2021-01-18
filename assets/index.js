@@ -94,7 +94,6 @@ $(document)
           //CLICK Functions
           $("#homeButton").on("click", function () {
             console.log("homeButton button has been clicked");
-
             $("#gallery").addClass("hidden");
             $("#description").removeClass("hidden");
         });
