@@ -38,47 +38,31 @@
     <hr class="mt-2 mb-5">
   </div>
 
- <!-- Description Content -->
-<div class="row">
-  <div class="col-sm-7 mx-auto">
-  <div class="card">
-    <h1 class="summerwalk">SummerWalk West, Unit #714</h1>
-    <img class="card-img-top" src="assets/gallery/front50.jpg" alt="Summerwalk">
-    <h2 class="card-title mt-3 pl-4"><b>It's time...</b></h2>
-    <div class="card-body bigdescription">
-      <h5 class="card-text"><b>Style. </b> It's all yours with this 1BR, 2BA, Penthouse Loft featuring a wood-burning fireplace, sun-filled skylights, and a triple-arch balcony with unobstructed views.</br></br>
+  <!-- Description Content -->
+  <div class="row">
+    <div class="col-sm-7 mx-auto" id="description">
+      <div class="card">
+        <h1 class="summerwalk">SummerWalk West, Unit #714</h1>
+        <img class="card-img-top" src="assets/gallery/front50.jpg" alt="Summerwalk">
+        <h2 class="card-title mt-3 pl-4"><b>It's time...</b></h2>
+        <div class="card-body bigdescription">
+          <h5 class="card-text"><b>Style. </b> It's all yours with this 1BR, 2BA, Penthouse Loft featuring a
+            wood-burning fireplace, sun-filled skylights, and a triple-arch balcony with unobstructed views.</br></br>
 
-        <b>Restoration.</b> Fresh and on-trend, you'll be the first to enjoy this home's brand new kitchen and baths, designed with quartz counters, ample cabinets, subway tiles and open shelves. The brand new European oak floors, HVAC, washer/dryer, and organized closets round out the offering. (Skylights replaced in late 2019.)</br></br>
-        
-        <b>Convenience.</b> Located in the heart of Arlington's Ballston neighborhood, you'll live just 1/2 block to the metro, and steps to bustling Ballston Quarter, home to countless restaurants, shops, gyms, and nightlife hot spots. By car, there's fast access to Routes 66, 50 and 495 to take you anywhere in the DMV.</h5>
-    </div>
-  </div>
-  </div>
-</div>
+            <b>Restoration.</b> Fresh and on-trend, you'll be the first to enjoy this home's brand new kitchen and
+            baths, designed with quartz counters, ample cabinets, subway tiles and open shelves. The brand new European
+            oak floors, HVAC, washer/dryer, and organized closets round out the offering. (Skylights replaced in late
+            2019.)</br></br>
 
-  <!-- <div class="container-fluid">
-    <div class="row" id="description">
-        <div class="col-8 mt-3 mx-auto fluid">
-            <div class="card">
-                <div class="card-horizontal">
-                    <div class="img-square-wrapper">
-                        <img class="" src="assets/gallery/front35.jpg" alt="Card image cap">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="card-title">SummerWalk West</h2>
-                        <h4>Unit #714</h4>
-                        <hr class="mt-2 mb-3">
-                        <h5 class="card-text"><b>Style. </b> It's all yours with this 1BR, 2BA, Penthouse Loft featuring a wood-burning fireplace, sun-filled skylights, and a triple-arch balcony with unobstructed views.</br></br>
-
-                          <b>Restoration.</b> Fresh and on-trend, you'll be the first to enjoy this home's brand new kitchen and baths, designed with quartz counters, ample cabinets, subway tiles and open shelves. The brand new European oak floors, HVAC, washer/dryer, and organized closets round out the offering. (Skylights replaced in late 2019.)</br></br>
-                          
-                          <b>Convenience.</b> Located in the heart of Arlington's Ballston neighborhood, you'll live just 1/2 block to the metro, and steps to bustling Ballston Quarter, home to countless restaurants, shops, gyms, and nightlife hot spots. By car, there's fast access to Routes 66, 50 and 495 to take you anywhere in the DMV.</h5>
-                    </div>
-                </div>
-            </div>
+            <b>Convenience.</b> Located in the heart of Arlington's Ballston neighborhood, you'll live just 1/2 block to
+            the metro, and steps to bustling Ballston Quarter, home to countless restaurants, shops, gyms, and nightlife
+            hot spots. By car, there's fast access to Routes 66, 50 and 495 to take you anywhere in the DMV.
+          </h5>
         </div>
+      </div>
     </div>
-</div> -->
+  </div>
+
 
   <!-- Gallery Content -->
   <div class="container hidden" id="gallery">
@@ -134,12 +118,10 @@
         <!-- Row 2 -->
         <!-- thumbnail comes second! -->
         <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="View from balcony looking out at the Nature Conservancy gardens."
-            data-image="assets/gallery/balcony.JPG"
-            data-target="#image-gallery">
-            <img class="img-thumbnail"
-              src="assets/gallery/balconyThumb.JPG"
-              alt="balcony photo">
+          <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+            data-title="View from balcony looking out at the Nature Conservancy gardens."
+            data-image="assets/gallery/balcony.JPG" data-target="#image-gallery">
+            <img class="img-thumbnail" src="assets/gallery/balconyThumb.JPG" alt="balcony photo">
             <div class="caption">
               <p>Balcony view</p>
             </div>
@@ -262,7 +244,83 @@
   </div>
 
   <!-- Contact Form -->
+  <div class="container contact hidden" id="contact">
+    <row>
+      <div class="col-sm-7 mx-auto">
+        <form id="contact-form" method="post" action="contact.php" role="form">
 
+          <div class="messages"></div>
+
+          <div class="controls">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_name">Firstname *</label>
+                  <input id="form_name" type="text" name="name" class="form-control"
+                    placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_lastname">Lastname *</label>
+                  <input id="form_lastname" type="text" name="surname" class="form-control"
+                    placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_email">Email *</label>
+                  <input id="form_email" type="email" name="email" class="form-control"
+                    placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_need">Subject *</label>
+                  <select id="form_need" name="need" class="form-control" required="required"
+                    data-error="Subject">
+                    <option value=""></option>
+                    <option value="Call Request">Call Request</option>
+                    <option value="Request walk-through appointment">Request walk-through appointment</option>
+                    <option value="Request more information">Request more information</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_message">Message *</label>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                    rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-lg btn-success btn-send" value="Send message">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-muted">
+                  <strong>*</strong> These fields are required.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </row>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery second, then Popper.js, then Bootstrap JS -->

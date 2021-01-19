@@ -96,11 +96,20 @@ $(document)
             console.log("homeButton button has been clicked");
             $("#gallery").addClass("hidden");
             $("#description").removeClass("hidden");
+            $("#contact").addClass("hidden")
         });
 
         $("#galleryButton").on("click", function () {
           console.log("galleryButton has been clicked");
           $("#description").addClass("hidden");
           $("#gallery").removeClass("hidden");
+          $("#contact").addClass("hidden")
       });
+
+      $("#contactButton").on("click", function () {
+        console.log("contactButton has been clicked");
+        $("#description").addClass("hidden");
+        $("#gallery").addClass("hidden");
+        $("#contact").removeClass("hidden")
+    });
       
