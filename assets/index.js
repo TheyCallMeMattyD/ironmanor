@@ -103,3 +103,4 @@ $(document)
           $("#description").addClass("hidden");
           $("#gallery").removeClass("hidden");
       });
+      
