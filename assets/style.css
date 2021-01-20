@@ -1,10 +1,9 @@
 body {
      background-color: #456990;
-     font-family: 'Patua One', cursive;
 }
 
 .btn {
-     font-family:Arial, Helvetica, sans-serif;
+     font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron {
@@ -13,6 +12,7 @@ body {
      text-align: right;
      color: black;
      margin-top: 25px;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .hidden {
@@ -29,7 +29,6 @@ hr {
 }
 
 .summerwalk {
-     font-family: 'patua one', cursive;
      text-align: center;
 }
 
